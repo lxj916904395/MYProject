@@ -2,13 +2,11 @@
 //  BannerView.m
 //  JIEAPP
 //
-//  Created by 梁显杰 on 2018/5/7.
+//  Created by lxj on 2018/5/7.
 //  Copyright © 2018年 jie. All rights reserved.
 //
 
 #import "FBannerView.h"
-
-#import "NSArray+runSend.h"
 
 @interface FBannerView()<UICollectionViewDataSource,UICollectionViewDelegate>
 @end
@@ -57,11 +55,10 @@
     
     [self addSubview:collectionView];
     
-    if (_images.count > 1) {
-        [self _createPageControl];
-        collectionView.contentOffset = CGPointMake(kScreenWWidth, 0);
-        [self _startTimer];
-    }
+    if (_images.count <= 1) return;
+    [self _createPageControl];
+    collectionView.contentOffset = CGPointMake(kScreenWWidth, 0);
+    [self _startTimer];
 }
 
 - (void)_createPageControl{
