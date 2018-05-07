@@ -1,0 +1,54 @@
+//
+//  jieapp.pch
+//  JIEAPP
+//
+//  Created by 梁显杰 on 2018/1/11.
+//  Copyright © 2018年 jie. All rights reserved.
+//
+
+#ifndef jieapp_pch
+#define jieapp_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <SDAutoLayout/SDAutoLayout.h>
+#import <SVProgressHUD/SVProgressHUD.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <MJRefresh/MJRefresh.h>
+#import <FMDB/FMDB.h>
+#import "UIImageView+WebCache.h"
+
+
+#import "UserDefaultHelper.h"
+#import "DefineHelper.h"
+
+#import "BaseBean.h"
+#import "HttpRespondse.h"
+#import "UIView+Frame.h"
+#import "Font.h"
+#import "HttPManager.h"
+#import "HttpURL.h"
+#import "Tools.h"
+#import "Const.h"
+
+
+#define  MHAdjustsScrollViewInsets_Never(__scrollView)\
+do {\
+_Pragma("clang diagnostic push")\
+_Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"")\
+if ([__scrollView respondsToSelector:NSSelectorFromString(@"setContentInsetAdjustmentBehavior:")]) {\
+NSMethodSignature *signature = [UIScrollView instanceMethodSignatureForSelector:@selector(setContentInsetAdjustmentBehavior:)];\
+NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:signature];\
+NSInteger argument = 2;\
+invocation.target = __scrollView;\
+invocation.selector = @selector(setContentInsetAdjustmentBehavior:);\
+[invocation setArgument:&argument atIndex:2];\
+[invocation retainArguments];\
+[invocation invoke];\
+}\
+_Pragma("clang diagnostic pop")\
+} while (0)
+
+
+#endif /* jieapp_pch */

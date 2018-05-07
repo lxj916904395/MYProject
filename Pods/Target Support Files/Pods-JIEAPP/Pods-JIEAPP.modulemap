@@ -1,0 +1,6 @@
+framework module Pods_JIEAPP {
+  umbrella header "Pods-JIEAPP-umbrella.h"
+
+  export *
+  module * { export * }
+}
