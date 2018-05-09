@@ -19,13 +19,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     NSArray *images = ({
-        NSArray *array = @[@"1.jpg",@"2.jpg",@"3.jpg",@"4.jpg",@"text"];
+        NSArray *array = @[@"https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=241170661,3235713291&fm=27&gp=0.jpg",
+                           @"https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1657043272,3404733096&fm=27&gp=0.jpg",
+                           @"https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=4028248642,1678862262&fm=200&gp=0.jpg",
+                           @"http://img0.imgtn.bdimg.com/it/u=1488042928,871516940&fm=27&gp=0.jpg",
+                           @"http://img3.imgtn.bdimg.com/it/u=1921887058,127248869&fm=27&gp=0.jpg"];
         array;
     });
     
-    FBannerView *banner = [[FBannerView alloc] initWithFrame:CGRectMake(0, kNavBarHeight, kScreenWWidth, 200) images:images time:1 click:^(NSInteger index) {
+    FBannerView *banner = [[FBannerView alloc] initWithFrame:CGRectMake(0, kNavBarHeight, kScreenWWidth, 200) images:images duration:1 placeholderImage:[UIImage imageNamed:@"text.jpg"] click:^(NSInteger index) {
         NSLog(@"点击了第 %zd 张",index);
     }];
+    
    
     [self.view addSubview:banner];
 }

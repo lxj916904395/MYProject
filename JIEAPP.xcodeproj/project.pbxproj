@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2DF235B79D457FDA26A71094 /* libPods-JIEAPP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5BE11EE6CD76EEA73BC7229 /* libPods-JIEAPP.a */; };
+		8B7F75A63084CA3E99349E32 /* libPods-JIEAPP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F72A1550AA216B42004EC2D /* libPods-JIEAPP.a */; };
 		CE210A15209FECEB0025F9DD /* FBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE210A14209FECEB0025F9DD /* FBannerView.m */; };
 		CE210A18209FF3F50025F9DD /* NSArray+runSend.m in Sources */ = {isa = PBXBuildFile; fileRef = CE210A17209FF3F50025F9DD /* NSArray+runSend.m */; };
 		CE28D3A820074250004AE634 /* BaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE28D3A720074250004AE634 /* BaseTabBarViewController.m */; };
@@ -53,6 +53,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F72A1550AA216B42004EC2D /* libPods-JIEAPP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JIEAPP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34DBBF0553E6E091086D9AC7 /* Pods-JIEAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JIEAPP.release.xcconfig"; path = "Pods/Target Support Files/Pods-JIEAPP/Pods-JIEAPP.release.xcconfig"; sourceTree = "<group>"; };
 		CE0D428D200881010040CEA9 /* DefineHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefineHelper.h; sourceTree = "<group>"; };
 		CE0D428F2008A6F00040CEA9 /* Font.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Font.h; sourceTree = "<group>"; };
@@ -149,7 +150,6 @@
 		E636DFC192043F2B91E70D52 /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
 		E636DFF6510C4BAF591CDAD5 /* NewsTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableView.m; sourceTree = "<group>"; };
 		ECDB055FF5D1AD21DA319E05 /* Pods-JIEAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JIEAPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JIEAPP/Pods-JIEAPP.debug.xcconfig"; sourceTree = "<group>"; };
-		F5BE11EE6CD76EEA73BC7229 /* libPods-JIEAPP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JIEAPP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DF235B79D457FDA26A71094 /* libPods-JIEAPP.a in Frameworks */,
+				8B7F75A63084CA3E99349E32 /* libPods-JIEAPP.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +176,7 @@
 				CE6ED071200C6F3900A9C603 /* libSDWebImage.a */,
 				CE6ED072200C6F3900A9C603 /* libTZImagePickerController.a */,
 				CE6ED060200C5DB200A9C603 /* libMasonry.a */,
-				F5BE11EE6CD76EEA73BC7229 /* libPods-JIEAPP.a */,
+				1F72A1550AA216B42004EC2D /* libPods-JIEAPP.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -555,12 +555,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-JIEAPP/Pods-JIEAPP-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
-				"${BUILT_PRODUCTS_DIR}/BlocksKit/BlocksKit.framework",
+				"${BUILT_PRODUCTS_DIR}/AZBannerView/AZBannerView.framework",
 				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/LKDBHelper/LKDBHelper.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
-				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/SDAutoLayout/SDAutoLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework",
@@ -568,12 +569,13 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BlocksKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AZBannerView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LKDBHelper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDAutoLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TZImagePickerController.framework",
@@ -818,10 +820,11 @@
 					"$(SRCROOT)/**",
 				);
 				INFOPLIST_FILE = JIEAPP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lxj.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -848,10 +851,11 @@
 					"$(SRCROOT)/**",
 				);
 				INFOPLIST_FILE = JIEAPP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lxj.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

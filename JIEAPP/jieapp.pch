@@ -16,7 +16,7 @@
 #import <SVProgressHUD/SVProgressHUD.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import <MJRefresh/MJRefresh.h>
-#import <FMDB/FMDB.h>
+#import <fmdb/FMDB.h>
 #import "UIImageView+WebCache.h"
 
 
