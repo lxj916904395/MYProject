@@ -17,7 +17,6 @@
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import <MJRefresh/MJRefresh.h>
 #import <fmdb/FMDB.h>
-#import "UIImageView+WebCache.h"
 
 
 #import "UserDefaultHelper.h"
